@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style1.css"> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body class="fullpage logged-in sidebar-false">
+<style>
+	
+body,html{
+  text-align:center;
+}
+h1{
+  text-align:center;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+}
+p{
+  text-align:center;
+}
+#formOutside{
+  background-color: lightblue;
+margin: 0 auto;
+border-radius: 4px;
+width: 75%;
+max-width: 900px;
+padding: 10px;
+padding-top: 20px;
+text-align:center;
+}
+
+.lables{
+    margin-left:30%;
+    text-align:left;
+}
+.input-field {
+  display: inline-block;
+    text-align: center;
+    height: 30px;
+    width: 280px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+}
+#Occupation{
+  margin-top:10px;
+  margin-bottom:20px;
+}
+.radio, .checkbox {
+    position: relative;
+    margin-left: 40%;
+    padding-bottom: 10px;
+    display:block;
+   display: -webkit-flex;
+  -webkit-align-items: center; 
+  display: flex;
+  align-items: center;
+}
+.ratings {
+    margin-right: 10px;
+  vertical-align:center;
+}
+
+
+
+
+</style>
+  <h1 id="title">Survey Form Project</h1>
+  <div id="formOutside">
+<p id="description">
+Fill out the information below to see if you qualify for our Certificate of Awesomeness! </p>
+<form id="survey-form" method="GET" action="">
+<div class="rows">
+<div class="lables"><label id="name-label" for="name">* Name: </label>
+</div>
+<div class="right tab"><input autofocus="" type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required="">
+</div>
+</div>
+<div class="rows">
+<div class="lables">
+<label id="email-label" for="email">* Email: </label>
+</div>
+<div class="right tab"><input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required="">
+</div>
+</div>
+<div class="rows">
+<div class="lables">
+<label id="number-label" for="age">* Number: </label></div>
+<div class="right tab"><input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="number" required="">
+</div>
+</div>
+<div class="rows">
+<div class="lables"> <label id="Occupation" for="currentOcc"> What is your current occupation industry? </label>
+</div>
+<div class="right tab"><select id="dropdown" name="currentOcc" class="dropdown">
+<option disabled="" value="">Select an option</option>
+<option value="sales">Sales</option>
+<option value="customerservice">Customer Service</option>
+<option value="hospitality">Hospitality</option>
+<option value="retail">Retail</option>
+<option value="creative">Creative</option>
+<option value="other">Other</option>
+<option value="pnts">Prefer Not To Say</option>
+</select>
+</div>
+</div>
+<div class="rows">
+<div class="lables"><br>
+<label id="likelihood" for="likehood"> How likely are you to reccomend this project to a friend? </label></div>
+<div class="right tab">
+<ul style="list-style: none;">
+<li class="radio">
+<label><input name="radio-buttons" value="1" type="radio" class="ratings"> Definitely</label>
+</li>
+<li class="radio">
+<label><input name="radio-buttons" value="1" type="radio" class="ratings"> Maybe</label>
+</li>
+<li class="radio">
+<label><input name="radio-buttons" value="1" type="radio" class="ratings"> Not Sure</label>
+</li>
+<li class="radio">
+<label><input name="radio-buttons" value="1" type="radio" class="ratings"> No Chance</label>
+</li>
+</ul>
+</div>
+</div>
+<div class="rows">
+<div class="lables">
+<label id="hobbies" for="hobbies"> Whick of the following do you enjoy? (Check all that apply):</label></div>
+<div class="right tab">
+<ul id="hobbies" style="list-style: none;">
+<li class="checkbox">
+<label><input name="hobby" value="1" type="checkbox" class="ratings"> Music</label>
+</li>
+<li class="checkbox">
+<label><input name="hobby" value="1" type="checkbox" class="ratings"> Art</label>
+</li>
+<li class="checkbox">
+<label><input name="hobby" value="1" type="checkbox" class="ratings"> TV/Film</label>
+</li>
+<li class="checkbox">
+<label><input name="hobby" value="1" type="checkbox" class="ratings"> Other Generic Hobbies</label>
+</li>
+</ul>
+</div>
+</div>
+<div class="rows">
+<div class="lables">
+<label for="comments">Any Comments or Suggestions?</label></div>
+<div class="right tab">
+<textarea id="comments" class="input-field" name="comment" placeholder="Enter your comment here..."></textarea>
+</div>
+</div>
+<button id="submit" type="submit">Submit</button>
+</form>
+
+  </body>
+</html>
+
+
